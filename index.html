@@ -6,6 +6,24 @@
     <title>text tool</title>
 </head>
 <body>
-    
+    <div class="heighlight">
+        <h1 class="heading">TEXT CHANGER</h1>
+
+        <div>
+            <textarea class="text-field" id="input-text"  rows="5"placeholder="Enter your text here"></textarea>
+        </div>
+
+        <div class="result-text" id="resultText"> Result</div>
+
+        <div class="btn-container">
+            <button class="btn" onclick="ActionResult('UpperCase')">Uppercase</button>
+
+            <button class="btn" onclick="ActionResult('LowerCase')">Lowercase</button>
+
+            <button class="btn" onclick="ActionResult('CharCount')">Count Characters</button>
+
+            <button class="btn" onclick="ActionResult('WordCount')">Count Words</button>
+        </div>
+    </div>
 </body>
 </html>
