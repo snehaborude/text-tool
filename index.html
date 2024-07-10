@@ -25,5 +25,26 @@
             <button class="btn" onclick="ActionResult('WordCount')">Count Words</button>
         </div>
     </div>
+    <script>
+        function ActionResult(action){
+            const inputText = document.getElementById("input-text")
+            const resultText = document.getElementById("resultText")
+
+            if (action == 'UpperCase') {
+                resultText.innerText = inputText.value.toUpperCase();
+            }
+            else if (action == 'LowerCase') {
+                resultText.innerText = inputText.value.toLowerCase();
+            }
+            else if (action == 'CharCount') {
+                resultText.innerText = (`Total Characters : ${inputText.value.length}`);
+            }
+            else { 
+                resultText.innerText = (`Total Words : ${inputText.value.split(" ").length}`);
+            }
+        }
+
+    </script>
+
 </body>
 </html>
